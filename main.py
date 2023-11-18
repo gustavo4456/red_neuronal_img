@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 melanoma = np.load('melanoma_processed.npy')
 non_melanoma = np.load('non_melanoma_processed.npy')
 
-# Definir cuántas imágenes deseas tomar de cada clase
+# Definir cuántas imágenes deseas tomar de cada clase 7300
 num_images_per_class = 7300
 
 # Tomar un número específico de imágenes de cada clase
@@ -50,7 +50,7 @@ model = keras.Sequential([
     layers.Flatten(),
     layers.Dropout(0.4),
     layers.Dense(512, activation='relu'),
-    layers.Dense(2, activation='softmax')  # Cambiar la capa de salida para tener dos clases
+    layers.Dense(2, activation='softmax')  # capa de salida para tener dos clases
 ])
 
 # Compilar el modelo
